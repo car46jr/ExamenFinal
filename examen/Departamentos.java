@@ -6,7 +6,7 @@ public class Departamentos {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+        MetodosArray registroDep = new MetodosArray();//Los registros de los vectores.
         MetodosListas registroListasDep = new MetodosListas();
 
         int opcion = 0;
@@ -46,7 +46,33 @@ public class Departamentos {
 
                         switch (select) {
 
-                          
+                            case 5:
+                               
+                                registroDep.mostrasDatoss();
+
+                                break;
+
+                            case 2:
+                            
+                                registroDep.mostrarDatos2();
+                                break;
+
+                            case 3:
+                                registroDep.busquedaDep();
+                                break;
+                            case 4:
+                                registroDep.paryim();
+                                break;
+
+                            case 1:
+                                String nombreA = "";
+                                String cabeceraA = "";
+                                int numeroB = 0;
+                                int numeroOrden = 0;
+
+                                registroDep.datosDepartamento(numeroOrden, nombreA, numeroB, cabeceraA);
+
+                                break;
 
                             case 0:
 

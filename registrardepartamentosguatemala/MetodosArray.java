@@ -97,6 +97,13 @@ public final class MetodosArray {
       vectorDatos[indiceVector]= tipo+espacio1+""+tipo1+espacio2+""+primerParametro;
    
     }
+   public void mostrarDatos2(){
+       System.out.println("Ingresar el departamento a buscar");
+         String nombreDep =sc.next();
+       this.nombreA=nombreDep;
+       System.out.println("El departento "+ nombreDep +" esta ubicado en:" + numeroOrden);
+   }
+   
 
    public void mostrasDatoss(){
           try{   
